@@ -48,13 +48,14 @@
     "lint": "eslint src",
     "type-check": "tsc --noEmit"
   },
-  "dependencies": {},
+  "dependencies": {
+    "mp4box": "catalog:",
+    "xgplayer": "catalog:"
+  },
   "devDependencies": {
     "@wry-smile/utils": "catalog:",
     "eslint": "catalog:",
-    "mp4box": "catalog:",
     "typescript": "catalog:",
-    "unbuild": "catalog:",
-    "xgplayer": "catalog:"
+    "unbuild": "catalog:"
   }
 }
