@@ -28,7 +28,7 @@
     "lint:fix": "turbo lint -- --fix",
     "type-check": "turbo type-check",
     "format": "turbo format",
-    "publish": "bumpp && pnpm -F @wry-smile/xgplayer-ws-fmp4 publish"
+    "publish:pkg": "bumpp -r && pnpm -F @wry-smile/xgplayer-ws-fmp4 publish"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:",
