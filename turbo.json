@@ -1,0 +1,37 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "globalDependencies": [
+    "**/.env",
+    "**/.env.local"
+  ],
+  "tasks": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/**",
+        ".next/**",
+        "build/**"
+      ],
+      "cache": true
+    },
+    "dev": {
+      "persistent": true,
+      "cache": false,
+      "dependsOn": []
+    },
+    "lint": {
+      "outputs": [
+        ".eslintcache"
+      ],
+      "cache": true
+    },
+    "type-check": {
+      "cache": true
+    },
+    "format": {
+      "cache": false
+    }
+  }
+}

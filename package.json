@@ -1,0 +1,48 @@
+{
+  "name": "@wry-smile/xgplayer-ws-fmp4-repo",
+  "type": "module",
+  "version": "0.0.1",
+  "private": "true",
+  "packageManager": "pnpm@10.24.0",
+  "description": "",
+  "author": "@wry-smile",
+  "license": "MIT",
+  "homepage": "https://github.com/wry-smile/xgplayer-ws-fmp4.git#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wry-smile/xgplayer-ws-fmp4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wry-smile/xgplayer-ws-fmp4.git/issues"
+  },
+  "keywords": [],
+  "main": "index.js",
+  "module": "true",
+  "scripts": {
+    "build": "turbo build",
+    "build:packages": "turbo build --filter='./packages/*'",
+    "dev": "turbo dev",
+    "dev:single": "pnpm -F @wry-smile/playground-single dev",
+    "dev:multi": "pnpm -F @wry-smile/playground-multi dev",
+    "lint": "turbo lint",
+    "lint:fix": "turbo lint -- --fix",
+    "type-check": "turbo type-check",
+    "format": "turbo format",
+    "publish": "bumpp && pnpm -F @wry-smile/xgplayer-ws-fmp4 publish"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "@types/node": "catalog:",
+    "@wry-smile/utils": "catalog:",
+    "@wry-smile/xgplayer-ws-fmp4": "workspace:*",
+    "bumpp": "catalog:",
+    "eslint": "catalog:",
+    "eslint-plugin-format": "catalog:",
+    "mp4box": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:",
+    "unbuild": "catalog:",
+    "vite": "catalog:",
+    "xgplayer": "catalog:"
+  }
+}

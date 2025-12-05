@@ -1,0 +1,60 @@
+{
+  "name": "@wry-smile/xgplayer-ws-fmp4",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@10.24.0",
+  "description": "XGPlayer WebSocket MP4 Streaming Plugin",
+  "author": "@wry-smile",
+  "license": "MIT",
+  "homepage": "https://github.com/wry-smile/xgplayer-ws-fmp4.git#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wry-smile/xgplayer-ws-fmp4.git",
+    "directory": "packages/xgplayer-ws-fmp4"
+  },
+  "bugs": {
+    "url": "https://github.com/wry-smile/xgplayer-ws-fmp4.git/issues"
+  },
+  "keywords": [
+    "xgplayer",
+    "mp4",
+    "websocket",
+    "streaming",
+    "live"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs",
+      "development": "./src/index.ts"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@wry-smile/utils": "catalog:",
+    "eslint": "catalog:",
+    "mp4box": "catalog:",
+    "typescript": "catalog:",
+    "unbuild": "catalog:",
+    "xgplayer": "catalog:"
+  }
+}
