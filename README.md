@@ -116,7 +116,7 @@ pnpm lint
 
 ## Tech Stack & Tools
 
-- Build: unbuild (Rollup + esbuild)
+- Build: tsdown
 - Package Management: pnpm workspace
 - Task Orchestration: Turborepo
 - Application Development: Vite

@@ -116,7 +116,7 @@ pnpm lint
 
 ## 技术栈与工具
 
-- 构建：unbuild（Rollup + esbuild）
+- 构建：tsdown
 - 包管理：pnpm workspace
 - 任务编排：Turborepo
 - 应用开发：Vite

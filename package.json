@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.2",
   "private": "true",
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@11.3.0",
   "description": "",
   "author": "@wry-smile",
   "license": "MIT",
@@ -41,7 +41,6 @@
     "mp4box": "catalog:",
     "turbo": "catalog:",
     "typescript": "catalog:",
-    "unbuild": "catalog:",
     "vite": "catalog:",
     "xgplayer": "catalog:"
   }
