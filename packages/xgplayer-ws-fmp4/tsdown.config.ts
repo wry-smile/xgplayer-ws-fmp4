@@ -2,7 +2,7 @@ import { defineConfig } from 'tsdown'
 
 export default defineConfig({
   entry: './src/index.ts',
-  format: ['esm', 'commonjs', 'iife'],
+  format: ['esm', 'commonjs', 'iife', 'umd'],
   globalName: 'XgplayerWsFmp4',
   platform: 'browser',
   minify: true,
